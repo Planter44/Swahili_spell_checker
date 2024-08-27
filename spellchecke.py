@@ -8,7 +8,7 @@ from collections import Counter
 
 # Load the Swahili dataset
 def load_swahili_dataset():
-    with open('swahili.txt', 'r') as f:
+    with open('swahili.txt', 'r', encoding='utf-8') as f:
         file_name_data = f.read().lower()
     words = re.findall(r'\w+', file_name_data)
     return words
