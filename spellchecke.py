@@ -47,7 +47,7 @@ def main():
     words = load_swahili_dataset()
     word_freq_dict, probs = create_word_freq(words)
 
-    input_text = st.text_area("Please enter Swahili words:", "")
+    input_text = st.text_area("Please input Swahili words to be checked ;-)", "")
 
     if st.button("Check"):
         if input_text:
